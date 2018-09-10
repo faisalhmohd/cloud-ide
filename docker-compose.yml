@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  editor:
+    image: theiaide/theia:next
+    user: root
+    ports:
+     - "3033:3000"
+    volumes:
+     - $PWD:/home/project:rw
